@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>803</width>
-    <height>1008</height>
+    <width>368</width>
+    <height>910</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,23 +21,29 @@
        <widget class="QLabel" name="label_2">
         <property name="minimumSize">
          <size>
-          <width>70</width>
+          <width>30</width>
           <height>0</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>70</width>
+          <width>30</width>
           <height>16777215</height>
          </size>
         </property>
         <property name="text">
-         <string>Current user:</string>
+         <string>User:</string>
         </property>
        </widget>
       </item>
       <item>
        <widget class="QComboBox" name="user_comboBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
         <property name="minimumSize">
          <size>
           <width>50</width>
@@ -46,7 +52,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>250</width>
+          <width>16777215</width>
           <height>16777215</height>
          </size>
         </property>
@@ -118,20 +124,19 @@
        </widget>
       </item>
       <item>
-       <spacer name="horizontalSpacer">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
+       <widget class="QPushButton" name="add_entry_pushButton">
+        <property name="minimumSize">
          <size>
-          <width>40</width>
-          <height>20</height>
+          <width>130</width>
+          <height>0</height>
          </size>
         </property>
-       </spacer>
-      </item>
-      <item>
-       <widget class="QPushButton" name="add_entry_pushButton">
+        <property name="maximumSize">
+         <size>
+          <width>130</width>
+          <height>16777215</height>
+         </size>
+        </property>
         <property name="font">
          <font>
           <pointsize>10</pointsize>
@@ -183,16 +188,16 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_3">
       <item>
-       <widget class="QCheckBox" name="checkBox">
+       <widget class="QCheckBox" name="weather_checkBox">
         <property name="minimumSize">
          <size>
-          <width>100</width>
+          <width>80</width>
           <height>0</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>100</width>
+          <width>80</width>
           <height>16777215</height>
          </size>
         </property>
@@ -230,16 +235,16 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_4">
       <item>
-       <widget class="QCheckBox" name="checkBox_2">
+       <widget class="QCheckBox" name="env_checkBox">
         <property name="minimumSize">
          <size>
-          <width>100</width>
+          <width>80</width>
           <height>0</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>100</width>
+          <width>80</width>
           <height>16777215</height>
          </size>
         </property>
@@ -249,7 +254,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QComboBox" name="enviro_comboBox">
+       <widget class="QComboBox" name="env_comboBox">
         <item>
          <property name="text">
           <string>thick trees or shrubs</string>
@@ -282,16 +287,16 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_5">
       <item>
-       <widget class="QCheckBox" name="checkBox_3">
+       <widget class="QCheckBox" name="equip_checkBox">
         <property name="minimumSize">
          <size>
-          <width>100</width>
+          <width>80</width>
           <height>0</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>100</width>
+          <width>80</width>
           <height>16777215</height>
          </size>
         </property>
@@ -347,7 +352,7 @@
      </layout>
     </item>
     <item>
-     <widget class="QCheckBox" name="checkBox_4">
+     <widget class="QCheckBox" name="other_checkBox">
       <property name="text">
        <string>Other</string>
       </property>
@@ -370,7 +375,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>803</width>
+     <width>368</width>
      <height>21</height>
     </rect>
    </property>
@@ -382,7 +387,14 @@
     <addaction name="actionOpen"/>
     <addaction name="actionClose"/>
    </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="actionchange_settings"/>
+   </widget>
    <addaction name="menuNew"/>
+   <addaction name="menuSettings"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionOpen">
@@ -398,6 +410,11 @@
   <action name="actionNew">
    <property name="text">
     <string>New</string>
+   </property>
+  </action>
+  <action name="actionchange_settings">
+   <property name="text">
+    <string>change settings</string>
    </property>
   </action>
  </widget>
