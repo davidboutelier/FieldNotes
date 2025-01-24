@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>577</width>
-    <height>860</height>
+    <width>803</width>
+    <height>1008</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -52,17 +52,67 @@
         </property>
         <item>
          <property name="text">
-          <string>Kaia Roth</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
           <string>Jack McTaggart</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Brody Rainer</string>
+          <string>Brody Rayner</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Jesse Banks</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Luke Fechner</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Keaton Richards</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Prosper Kelly</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Christopher Mickle</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Eric Newman</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Kaia Roth</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Daniel McClelland</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Joel Gajewski</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>David Boutelier</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>new employee</string>
          </property>
         </item>
        </widget>
@@ -82,6 +132,13 @@
       </item>
       <item>
        <widget class="QPushButton" name="add_entry_pushButton">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
         <property name="text">
          <string>Add entry to note</string>
         </property>
@@ -124,6 +181,179 @@
      </layout>
     </item>
     <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QCheckBox" name="checkBox">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Weather</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="weather_comboBox">
+        <item>
+         <property name="text">
+          <string>starting to rain</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>rain stopped</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>strong wind start</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>wind died</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QCheckBox" name="checkBox_2">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Environment</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="enviro_comboBox">
+        <item>
+         <property name="text">
+          <string>thick trees or shrubs</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>wet muddy ground</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>loose dry dirt</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>gravel ground</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>outcropping rocks</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QCheckBox" name="checkBox_3">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Equipment</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="equip_comboBox">
+        <item>
+         <property name="text">
+          <string>first vibe time</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>vibe overheat</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>system error</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>standby start</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>standby finish</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>evibe swap</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>battery swap</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>ebox swap</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="checkBox_4">
+      <property name="text">
+       <string>Other</string>
+      </property>
+     </widget>
+    </item>
+    <item>
      <widget class="QPlainTextEdit" name="entry_plainTextEdit">
       <property name="maximumSize">
        <size>
@@ -140,7 +370,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>577</width>
+     <width>803</width>
      <height>21</height>
     </rect>
    </property>
